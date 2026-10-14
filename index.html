@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Web Completo con Navegación Adaptativa</title>
+
+    <!-- Enlace a la hoja de estilos CSS general -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         HEADER / ENCABEZADO
+         Contiene la barra de navegación (existente)
+         y la sección Hero (banner principal de bienvenida).
+         ========================================== -->
+    <header class="site-header">
+        
+        <!-- BARRA DE NAVEGACIÓN (Estructura intacta) -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <!-- Logotipo del sitio web -->
+                <a href="index.html" class="navbar-logo">ÉLAN Fisioterapia</a>
+                
+                <!-- Botón de menú hamburguesa para dispositivos móviles -->
+                <button class="navbar-toggle" aria-label="Abrir menú">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+
+                <!-- Menú principal con enlaces de navegación -->
+                <ul class="navbar-menu">
+                    <li> <a href="#" class="active"> Home </a> </li>
+                    <li> <a href="#about"> About </a> </li>
+                    <li> <a href="#services"> Services </a> </li>
+                    <li> <a href="#blog"> Blog </a> </li>
+                    <li> <a href="#contact"> Contact </a> </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- SECCIÓN HERO
+             Presentación visual de impacto justo debajo de la barra de navegación.
+             Función: Captar la atención inmediata del visitante y ofrecer una acción directa (CTA). -->
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- Título principal de la página -->
+                <h1 class="hero-title">Bienvenido a Nuestra Plataforma</h1>
+                <!-- Breve descripción o subtítulo persuasivo -->
+                <p class="hero-subtitle">Diseño moderno, responsivo y adaptado a cualquier dispositivo para potenciar tu presencia digital.</p>
+                <!-- Botón de llamada a la acción (Call To Action) -->
+                <a href="#services" class="hero-btn">Explorar Servicios</a>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- ==========================================
+         MAIN / CONTENIDO PRINCIPAL
+         Contenedor semántico principal del sitio web.
+         Aloja el contenido relevante dividido en secciones.
+         ========================================== -->
+    <main class="main-content">
+
+        <!-- SECCIÓN DE SERVICIOS / CARACTERÍSTICAS
+             Función: Presentar los servicios o características clave en formato de cuadrícula (cards). -->
+        <section id="services" class="content-section">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <p class="section-description">Soluciones adaptadas a tus necesidades comerciales y digitales.</p>
+            </div>
+
+            <!-- Cuadrícula flexible para organizar las tarjetas de información -->
+            <div class="cards-grid">
+                <!-- Tarjeta 1 -->
+                <article class="card">
+                    <div class="card-icon">🚀</div>
+                    <h3 class="card-title">Desarrollo Web</h3>
+                    <p class="card-text">Creamos sitios web rápidos, interactivos y optimizados para motores de búsqueda (SEO).</p>
+                </article>
+
+                <!-- Tarjeta 2 -->
+                <article class="card">
+                    <div class="card-icon">🎨</div>
+                    <h3 class="card-title">Diseño UI/UX</h3>
+                    <p class="card-text">Diseñamos interfaces atractivas e intuitivas centradas en la experiencia de usuario.</p>
+                </article>
+
+                <!-- Tarjeta 3 -->
+                <article class="card">
+                    <div class="card-icon">📱</div>
+                    <h3 class="card-title">Diseño Responsivo</h3>
+                    <p class="card-text">Garantizamos que tu plataforma se adapte perfectamente a teléfonos, tablets y monitores.</p>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- SECCIÓN "ACERCA DE" / INFORMACIÓN
+             Función: Ofrecer contexto adicional sobre la empresa o proyecto. -->
+        <section id="about" class="content-section about-section">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre Nosotros</h2>
+                    <p>“Élan Fisioterapia” es una pequeña organización de carácter comercial, en donde ofrecen un total de siete servicios del mismo ámbito, en modalidad atención en establecimiento y domicilio, contando con 3 años de experiencia.</p>
+                    <p>Ubicados en Soledad de Graciano Sánchez, San Luis Potosi. </p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3694.7882154765016!2d-100.93616542524028!3d22.172132279779007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa1c656ce91a9%3A0x3de5a76bb18f21b5!2sFisioterapia%20y%20rehabilitaci%C3%B3n%20-%20Negrete!5e0!3m2!1ses-419!2smx!4v1791573845321!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </section>
+
+         <section id="Blog" class="content-section about-section">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2 class="section-title">Nuestro Blog</h2>
+                    <p>¿Que es la Fisioterapia?</p>
+                    <p>“Es el arte y la ciencia del tratamiento por medio del ejercicio terapéutico, calor, frío, luz, agua, masaje y electricidad”, definido por la OMS en 1958.
+“Profesión de atención de la salud que se ocupa de la función y el movimiento humano y de maximizar el potencial físico. Se ocupa de identificar y maximizar la calidad de vida y el potencial de movimiento en las esferas de promoción, prevención, tratamiento, intervención, habilitación y rehabilitación”, Definido por la Confederación Mundial de fisioterapia.
+</p>
+                </div class="Imagen_Fisio">
+                <img src="./images/Imagen Fisioterapia.jpeg" alt="FisioImage">
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <!-- ==========================================
+         FOOTER / PIE DE PÁGINA
+         Función: Mostrar información de derechos, enlaces útiles y redes sociales.
+         ========================================== -->
+    <footer id="contact" class="site-footer">
+        <div class="footer-container">
+            <!-- Columna 1: Información de marca -->
+            <div class="footer-col">
+                <h4 class="footer-brand">Mi Sitio Web</h4>
+                <p class="footer-desc">Creando experiencias digitales excepcionales con CSS y HTML responsivo.</p>
+            </div>
+
+            <!-- Columna 2: Enlaces rápidos de navegación -->
+            <div class="footer-col">
+                <h5 class="footer-heading">Enlaces Rápidos</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#about">Acerca de</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Información de contacto -->
+            <div class="footer-col">
+                <h5 class="footer-heading">Contacto</h5>
+                <p>Email: contacto@misitioweb.com</p>
+                <p>Teléfono: +52 (444) 123-4567</p>
+                <a href="https://www.facebook.com/LaUASLP/" target="_blank"><p>Visitanos en Instagram</p></a>
+            </div>
+        </div>
+
+        <!-- Barra inferior de derechos de autor -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script de control del menú móvil -->
+    <script src="script.js"></script>
+</body>
+</html>
